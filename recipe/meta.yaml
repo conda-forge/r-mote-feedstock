@@ -1,7 +1,6 @@
 {% set version = '1.0.2' %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-mote
@@ -14,8 +13,7 @@ source:
   sha256: 877d9afec4af9c5b3dcb003c117a55d0a2064f4ce017e8eddcd01d5eb3a0c29f
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
